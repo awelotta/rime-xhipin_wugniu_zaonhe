@@ -1,3 +1,6 @@
+# Fork details
+I converted zaonhe dict to 钱拼 (xhipin / "Qian's pinyin")
+
 # 上海吳語拼音輸入方案
 
 
