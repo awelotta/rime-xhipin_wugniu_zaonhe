@@ -114,6 +114,48 @@ speller:
     # 容錯 ao => oa
     - derive/ao/oa/
 
+    # xform to qianshi pinyin (after derive multicandidate rules 
+    # finals
+    - xform/q/k/
+    - xform/aon/ang/
+    - xform/on/ong/
+    - xform/au/ao/
+    - xform/eu/ou
+    # medials and breathy voice
+    - xform/^w/wh/
+    - xform/^y/yh/
+    - xform/^u([aeiou])/w$1/
+    - xform/^i([aeiou])/y$1/
+    - xform/^u/wu/
+    - xform/^i/yi/
+    - xform/gh/hh/
+    # # /y/ medial
+    - xform/ioe/yuoe/
+    - xform/iu/yu/
+    # # initials
+    - derive/^v([aeiouy])/fh$1/
+    - derive/^v([aeiouy])/vh$1/
+    - xform/^sh([aeiouy])/x$1/
+    - xform/^zh([aeiouy])/xh$1/
+    - derive/^z([aeiouy])/sh$1/
+    - derive/^ts([aeiouy])/z$1/
+    - xform/^j([aeiouy])/jh$1/
+    - xform/^c([aeiouy])/j$1/
+    - xform/^tsh([aeiouy])/c$1/
+    - xform/^ch([aeiouy])/q$1/
+    - derive/^gn([aeiouy])/n$1/
+    - xform/^b([aeiouy])/bh$1/
+    - xform/^p([aeiouy])/b$1/
+    - derive/^ph([aeiouy])/p$1/
+    - xform/^d([aeiouy])/dh$1/
+    - xform/^t([aeiouy])/d$1/
+    - derive/^th([aeiouy])/t$1/
+    - xform/^g([aeiouy])/gh$1/
+    - xform/^k([aeiouy])/g$1/
+    - derive/^kh([aeiouy])/k$1/
+    # iou > iu
+    - derive/([jqx]|jh|xh)iou/$1iu
+
 # 主翻譯器 上海吳拼
 translator:
   dictionary: wugniu_zaonhe # 調取詞典wugniu_zaonhe
