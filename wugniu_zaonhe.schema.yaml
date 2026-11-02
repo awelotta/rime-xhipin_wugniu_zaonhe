@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: wugniu_zaonhe
-  name: 吳語（上海）
+  schema_id: xhipin_wugniu_zaonhe
+  name: 錢拼吳語（上海）
   version: "0.37"
   author:
     - 吳飛得 <fededemarco@gmail.com> (dict)
@@ -11,6 +11,7 @@ schema:
     - 沪语角 <930702500@qq.com> (dict)
     - 雪心居士 <sihsin@live.com> (schema)
     - Shin Zoqchiuq <shinzoqchiuq@outlook.com> (dict, schema)
+    - awelotta <awe.lotta@gmail.com> (qianpin schema)
   description: |
     採用學堂式吳語拼音
     上海中派（分尖團）
